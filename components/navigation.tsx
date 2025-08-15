@@ -4,6 +4,8 @@ import Link from "next/link"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Logo from '@/assets/images/website.png'
+import Image from "next/image"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,11 +14,13 @@ export function Navigation() {
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center space-x-2 hover-lift">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center glow-primary">
-              <span className="text-primary-foreground font-bold text-lg">B</span>
-            </div>
-            <span className="font-heading font-bold text-xl">BotStrateg</span>
+          <Link href="/" className="flex items-center space-x-2 ">
+            <Image 
+              src={Logo}
+              alt="BotStrateg Logo"
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
