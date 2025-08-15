@@ -59,8 +59,8 @@ export function WaitlistForm({
         <CardContent className="pt-6">
           <div className="text-center">
             <CheckCircle className="h-12 w-12 text-primary mx-auto mb-4" />
-            <h3 className="font-heading font-semibold text-lg mb-2">You're on the list!</h3>
-            <p className="text-muted-foreground">We'll notify you as soon as BotStrateg is ready to launch.</p>
+            <h3 className="font-heading font-semibold text-lg mb-2">You&apos;re on the list!</h3>
+            <p className="text-muted-foreground">We&apos;ll notify you as soon as BotStrateg is ready to launch.</p>
           </div>
         </CardContent>
       </Card>

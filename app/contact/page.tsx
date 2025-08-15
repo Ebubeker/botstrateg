@@ -2,14 +2,14 @@
 
 import type React from "react"
 
-import { useState } from "react"
-import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, MessageSquare, Clock, CheckCircle, Loader2 } from "lucide-react"
+import { CheckCircle, Clock, Loader2, MessageSquare } from "lucide-react"
+import { useState } from "react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -70,7 +70,7 @@ export default function ContactPage() {
             Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Have questions about BotStrateg? We'd love to hear from you. Send us a message and we'll respond as soon as
+            Have questions about BotStrateg? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as
             possible.
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                       <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" />
                       <h3 className="font-heading font-semibold text-2xl mb-4">Message Sent!</h3>
                       <p className="text-muted-foreground text-lg mb-6">
-                        Thank you for reaching out. We'll get back to you within 24 hours.
+                        Thank you for reaching out. We&apos;ll get back to you within 24 hours.
                       </p>
                       <Button onClick={() => setIsSubmitted(false)} variant="outline">
                         Send Another Message
@@ -131,7 +131,7 @@ export default function ContactPage() {
                   <CardHeader>
                     <CardTitle className="font-heading text-2xl">Send us a message</CardTitle>
                     <CardDescription>
-                      Fill out the form below and we'll get back to you as soon as possible.
+                      Fill out the form below and we&apos;ll get back to you as soon as possible.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>

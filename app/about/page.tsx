@@ -22,7 +22,7 @@ export default function AboutPage() {
             About <span className="text-primary">BotStrateg</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            We're building the future of automated crypto trading with
+            We&apos;re building the future of automated crypto trading with
             AI-powered insights and intelligent bot management.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 strategies are actually working, identify market opportunities
                 your bots might be missing, and make data-driven decisions about
                 when to adjust, pause, or scale your automated trading. With
-                BotStrateg's comprehensive analytics, you're always one step
+                BotStrateg&apos;s comprehensive analytics, you&apos;re always one step
                 ahead of the market.
               </p>
             </div>
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 </div>
                 <CardTitle className="font-heading">Innovation</CardTitle>
                 <CardDescription>
-                  We constantly push the boundaries of what's possible in
+                  We constantly push the boundaries of what&apos;s possible in
                   trading technology
                 </CardDescription>
               </CardHeader>
@@ -192,14 +192,14 @@ export default function AboutPage() {
             Development Status
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            BotStrateg is currently in active development. We're working hard to
+            BotStrateg is currently in active development. We&apos;re working hard to
             bring you the most comprehensive trading bot management platform
             available.
           </p>
 
           <div className="bg-card border border-border rounded-lg p-8">
             <h3 className="font-heading font-semibold text-xl mb-4">
-              What's Coming
+              What&apos;s Coming
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>
