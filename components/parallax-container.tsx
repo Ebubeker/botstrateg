@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 interface ParallaxContainerProps {
   children: React.ReactNode
@@ -11,10 +11,24 @@ interface ParallaxContainerProps {
 
 export function ParallaxContainer({ children, speed = "medium", className = "" }: ParallaxContainerProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(
+        window.innerWidth < 768 ||
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+      )
+    }
+
+    checkMobile()
+    window.addEventListener("resize", checkMobile)
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
 
   useEffect(() => {
     const container = containerRef.current
-    if (!container) return
+    if (!container || isMobile) return
 
     const handleScroll = () => {
       const scrolled = window.pageYOffset
@@ -47,10 +61,10 @@ export function ParallaxContainer({ children, speed = "medium", className = "" }
     handleScroll() // Initial call
 
     return () => window.removeEventListener("scroll", throttledScroll)
-  }, [speed])
+  }, [speed, isMobile])
 
   return (
-    <div ref={containerRef} className={`parallax-${speed} ${className}`}>
+    <div ref={containerRef} className={`${!isMobile ? `parallax-${speed}` : ""} ${className}`}>
       {children}
     </div>
   )
