@@ -209,15 +209,16 @@ const blogPosts = [
 ];
 
 interface BlogDetailPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({
   params,
 }: BlogDetailPageProps): Promise<Metadata> {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const resolvedParams = await params;
+  const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
   if (!post) {
     return {
@@ -268,7 +269,6 @@ export async function generateStaticParams() {
 
 export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
   const resolvedParams = await params;
-
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
 
   if (!post) {

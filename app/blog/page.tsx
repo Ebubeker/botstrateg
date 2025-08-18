@@ -106,15 +106,6 @@ const blogPosts = [
   },
 ];
 
-const categories = [
-  "All",
-  "AI Trading",
-  "Risk Management",
-  "Market Analysis",
-  "Strategy Development",
-  "Trading Psychology",
-];
-
 export default function BlogPage() {
   const featuredPost = blogPosts.find((post) => post.featured);
   const regularPosts = blogPosts.filter((post) => !post.featured);
@@ -232,7 +223,7 @@ export default function BlogPage() {
         <AnimatedSection className="py-12 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {regularPosts.map((post, index) => (
+              {regularPosts.map((post) => (
                 <Card
                   key={post.id}
                   className="bg-card/50 border-card hover:border-teal-400/30 transition-all duration-300 group"
