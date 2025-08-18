@@ -36,7 +36,7 @@ const TermsOfService: React.FC = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-white mb-4">1. Acceptance of Terms</h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                By accessing or using BotStrateg ("the Service"), you agree to be bound by these Terms of Service ("Terms"). 
+                By accessing or using BotStrateg (&quot;the Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). 
                 If you do not agree to these Terms, you may not access or use the Service. These Terms apply to all users, 
                 including visitors, registered users, and subscribers.
               </p>
@@ -109,7 +109,7 @@ const TermsOfService: React.FC = () => {
                 BotStrateg integrates with third-party cryptocurrency exchanges through API connections. You acknowledge that:
               </p>
               <ul className="text-gray-300 space-y-2 mb-4 ml-6">
-                <li>• You must comply with each exchange's terms of service</li>
+                <li>• You must comply with each exchange&apos;s terms of service</li>
                 <li>• API keys and permissions are your responsibility to manage</li>
                 <li>• We are not responsible for exchange downtime or API limitations</li>
                 <li>• You should use API keys with minimal necessary permissions</li>
@@ -143,7 +143,7 @@ const TermsOfService: React.FC = () => {
               <h2 className="text-2xl font-semibold text-white mb-4">9. Disclaimers</h2>
               <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-6 mb-4">
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND. 
+                  THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND. 
                   WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
                 </p>
                 <ul className="text-gray-300 space-y-1 ml-4">
@@ -190,7 +190,7 @@ const TermsOfService: React.FC = () => {
               <h2 className="text-2xl font-semibold text-white mb-4">13. Changes to Terms</h2>
               <p className="text-gray-300 leading-relaxed mb-4">
                 We reserve the right to modify these Terms at any time. We will notify you of any material changes 
-                by posting the new Terms on this page and updating the "Last updated" date. Your continued use of 
+                by posting the new Terms on this page and updating the &quot;Last updated&quot; date. Your continued use of 
                 the Service after any such changes constitutes your acceptance of the new Terms.
               </p>
             </section>
