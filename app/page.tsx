@@ -10,7 +10,7 @@ import { WaitlistForm } from "@/components/waitlist-form";
 import { Footer } from "@/components/footer";
 import { ParallaxContainer } from "@/components/parallax-container";
 import { AnimatedSection } from "@/components/animated-section";
-import { Bot, TrendingUp, Shield, Zap, BarChart3, Brain } from "lucide-react";
+import { Bot, TrendingUp, Shield, Zap, BarChart3, Brain, Star, Euro, Clock } from "lucide-react";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -185,6 +185,69 @@ export default function HomePage() {
             </div>
           </div>
         </ParallaxContainer>
+      </section>
+
+      {/* Pricing Preview Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto">
+          <AnimatedSection animation="fade-in-up">
+            <div className="text-center mb-12">
+              <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">Simple, Transparent Pricing</h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Start with our free trial and upgrade when you're ready
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <AnimatedSection animation="fade-in-up" delay={100}>
+              <Card className="hover-lift text-center">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto glow-primary">
+                    <Clock className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle className="font-heading">Free Trial</CardTitle>
+                  <div className="text-3xl font-bold mt-2">€0</div>
+                  <CardDescription>7 days to test our platform</CardDescription>
+                </CardHeader>
+              </Card>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-in-up" delay={200}>
+              <Card className="hover-lift text-center border-primary shadow-lg shadow-primary/20 scale-105">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto glow-primary">
+                    <Star className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle className="font-heading">Pro Monthly</CardTitle>
+                  <div className="text-3xl font-bold mt-2">€30</div>
+                  <CardDescription>per month</CardDescription>
+                </CardHeader>
+              </Card>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-in-up" delay={300}>
+              <Card className="hover-lift text-center">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto glow-primary">
+                    <Euro className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle className="font-heading">Pro Yearly</CardTitle>
+                  <div className="text-3xl font-bold mt-2">€270</div>
+                  <CardDescription>per year (Save 25%)</CardDescription>
+                </CardHeader>
+              </Card>
+            </AnimatedSection>
+          </div>
+
+          <AnimatedSection animation="fade-in-up" delay={400}>
+            <div className="text-center mt-8">
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/pricing" className="hover:text-primary">View Full Pricing Details</Link>
+              </Button>
+            </div>
+          </AnimatedSection>
+        </div>
       </section>
 
       {/* Product Section with Waitlist */}
