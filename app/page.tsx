@@ -194,7 +194,7 @@ export default function HomePage() {
             <div className="text-center mb-12">
               <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4">Simple, Transparent Pricing</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Start with our free trial and upgrade when you're ready
+                Start with our free trial and upgrade when you&apos;re ready
               </p>
             </div>
           </AnimatedSection>

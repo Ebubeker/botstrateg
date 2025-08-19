@@ -73,12 +73,12 @@ export function PricingSection() {
             Choose Your Plan
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Start with our free trial and upgrade when you're ready to unlock the full potential of automated trading
+            Start with our free trial and upgrade when you&apos;re ready to unlock the full potential of automated trading
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {pricingPlans.map((plan, index) => (
+          {pricingPlans.map((plan) => (
             <Card
               key={plan.name}
               className={`relative transition-all duration-300 hover:scale-105 ${

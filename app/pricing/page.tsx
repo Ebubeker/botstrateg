@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { PricingSection } from "@/components/pricing-section";
 import { AnimatedSection } from "@/components/animated-section";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { HelpCircle, Shield, CreditCard } from "lucide-react";
 import { WaitlistForm } from "@/components/waitlist-form";
@@ -103,7 +103,7 @@ export default function PricingPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-muted-foreground">
-              Got questions? We've got answers.
+              Got questions? We&apos;ve got answers.
             </p>
           </div>
 
